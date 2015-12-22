@@ -1,0 +1,261 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"firebase",
+				"firebaseAuth"
+			],
+			[
+				"Fire",
+				"FirebaseAuthentication"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "Package Control: inst",
+		"selected_items":
+		[
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 132.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ferdinandurban/Projects/jasfresh/webapp/jasfreshApp"
+	],
+	"file_history":
+	[
+		"/Users/ferdinandurban/Projects/jasfresh/webapp/jasfreshApp/jasfreshApp",
+		"/Users/ferdinandurban/Projects/jasfresh/webapp/testapp/angular-seed/app/app.js",
+		"/Users/ferdinandurban/Projects/jasfresh/webapp/testapp/angular-seed/app/index.html",
+		"/Users/ferdinandurban/Projects/jasfresh/webapp/testapp/angular-seed/app/home/home.html",
+		"/Users/ferdinandurban/Projects/jasfresh/webapp/testapp/angular-seed/app/home/home.js",
+		"/Users/ferdinandurban/Projects/jasfresh/webapp/todoApp/js/todoAppFirebaseExplicit.js",
+		"/Users/ferdinandurban/Projects/jasfresh/webapp/todoApp/js/todoAppOriginal.js",
+		"/Users/ferdinandurban/Projects/jasfresh/webapp/todoApp/js/todoAppFirebaseImplicit.js",
+		"/Users/ferdinandurban/Projects/jasfresh/webapp/todoApp/index.html",
+		"/Users/ferdinandurban/Projects/jasfresh/webapp/todoApp/firebase.json",
+		"/Users/ferdinandurban/Library/Application Support/Sublime Text 3/Packages/Web Inspector/Default (OSX).sublime-keymap",
+		"/Users/ferdinandurban/Projects/python-firebase/firebase/firebase.py",
+		"/Users/ferdinandurban/Projects/jasfresh/www/test.html",
+		"/Users/ferdinandurban/Library/Application Support/Sublime Text 3/Packages/Web Inspector/swi.sublime-settings",
+		"/Users/ferdinandurban/Projects/python-firebase/tests/jsonutil_test.py",
+		"/Users/ferdinandurban/Projects/python-firebase/tests/__init__.py",
+		"/Users/ferdinandurban/Projects/python-firebase/tests/firebase_test.py",
+		"/Users/ferdinandurban/Library/Application Support/Sublime Text 3/Packages/DashDoc/DashDoc.sublime-settings",
+		"/Users/ferdinandurban/Downloads/ios-icons-launch-images-generator-master/CreateiOSLaunchImages.sh",
+		"/Users/ferdinandurban/Downloads/ios-icons-launch-images-generator-master/CreateiOSIcons.sh",
+		"/Users/ferdinandurban/Projects/XCode_Templates/README.md",
+		"/Users/ferdinandurban/Projects/XCGLogger/XCGLogger/Library/XCGLogger/XCGLogger.swift",
+		"/Users/ferdinandurban/.bash_profile",
+		"/Users/ferdinandurban/Downloads/306762159_0_ONZ-3.xml",
+		"/Users/ferdinandurban/Downloads/307059364_0_ONZ-2.xml",
+		"/Users/ferdinandurban/Projects/XCode_Templates/install.sh",
+		"/Users/ferdinandurban/Downloads/2048-SpriteBuilder-Swift-master/P1-Set-Up-In-SpriteBuilder/content.md",
+		"/Users/ferdinandurban/Downloads/2048-SpriteBuilder-Swift-master/P6-Adding-Polish/cms_id",
+		"/Users/ferdinandurban/Projects/XCode_Templates/iOS Application.xctemplate/Images.xcassets/LaunchImage.launchimage/Contents.json",
+		"/Users/ferdinandurban/Projects/XCode_Templates/iOS Application.xctemplate/Images.xcassets/AppIcon/AppIcon.appiconset/Contents.json",
+		"/Users/ferdinandurban/Projects/XCode_Templates/iOS Application.xctemplate/AppDelegate.m",
+		"/Users/ferdinandurban/Projects/XCode_Templates/iOS Application.xctemplate/FUVersionWindow.m",
+		"/Users/ferdinandurban/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/ferdinandurban/Projects/XCode_Templates/Base.xctemplate/TemplateInfo.plist",
+		"/Users/ferdinandurban/Downloads/logo_under_dev/ios/README.md",
+		"/Users/ferdinandurban/Projects/XCode_Templates/OS X Application.xctemplate/TemplateInfo.plist",
+		"/Users/ferdinandurban/Projects/XCode_Templates/Bundle Base.xctemplate/TemplateInfo.plist",
+		"/Users/ferdinandurban/Projects/XCode_Templates/iOS Application.xctemplate/TemplateInfo.plist",
+		"/Users/ferdinandurban/Projects/Apple/swift/docs/_build/html/searchindex.js",
+		"/Users/ferdinandurban/Projects/cpoj/iOS/trunk/ObchodIH/ObchodIH.xcodeproj/project.xcworkspace/xcuserdata/ferdinandurban.xcuserdatad/UserInterfaceState.xcuserstate",
+		"/Users/ferdinandurban/Desktop/eObchodnik.log",
+		"/Users/ferdinandurban/Projects/cpoj/iOS/trunk/ObchodIH/Libraries/RCRunkeeperSwitch/LICENSE",
+		"/Users/ferdinandurban/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/ferdinandurban/Projects/sweather/sweather/sweather/Podfile",
+		"/Users/ferdinandurban/Projects/HUDini/wercker.yml",
+		"/Users/ferdinandurban/Downloads/306324036_0_ONZ.xml",
+		"/Users/ferdinandurban/Projects/HUDini/.git/MERGE_MSG",
+		"/Users/ferdinandurban/Projects/HUDini/README.md",
+		"/Users/ferdinandurban/Projects/HUDini/Podfile",
+		"/Users/ferdinandurban/Projects/STRVWeather/Podfile",
+		"/Users/ferdinandurban/Projects/STRVWeather/FWeather.xcodeproj/project.pbxproj",
+		"/Users/ferdinandurban/Projects/NodeJS/tutorial1/app.js",
+		"/Users/ferdinandurban/Downloads/node-tutorial-2-restful-app-master/package.json",
+		"/Users/ferdinandurban/Projects/STRVWeather/.gitignore",
+		"/Users/ferdinandurban/Projects/strokerace/StrokeRace/AppDelegate.swift"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"{\n",
+			"FDVersionWindow",
+			"1414",
+			"inde",
+			"STRV"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "jasfreshApp.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
