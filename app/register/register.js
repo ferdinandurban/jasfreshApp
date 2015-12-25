@@ -11,28 +11,25 @@ angular.module('myApp.register', ['ngRoute', 'firebase'])
 }])
  
 // Register controller
-.controller('RegisterCtrl', [ '$scope', '$location', '$firebaseAuth', function($scope, $location, $firebaseAuth) {
-    var firebaseObj = new Firebase("https://jasfresh.firebaseio.com");
-    var auth = $firebaseAuth(firebaseObj);
-
-    $scope.signUp = function() {
+.controller('RegisterCtrl', ['$scope', '$location', function($scope, $location, $firebaseAuth) {
+    var ref = new Firebase("https://jasfresh.firebaseio.com");
+    
+    $scope.SignUp = function(e) {
         if (!$scope.regForm.$invalid) {
             var email = $scope.user.email;
             var password = $scope.user.password;
          
-            if (email && password) {
-                auth.$createUser(email, password)
-                    .then(function() {
-                        // do things if success
-                        console.log('User creation success');
-                        $location.path('/home');
-                    }, function(error) {
-                        // do things if failure
+            ref.createUser({email:email, password:password},
+                function(error, userData) {
+                    if(error) {
                         console.log(error);
                         $scope.regError = true;
                         $scope.regErrorMessage = error.message;
-                    });
-            }
+                    } else {    // do things if success
+                        console.log('User creation success');
+                        $location.path('/home');
+                    }
+                });
         }
     };
 }]);

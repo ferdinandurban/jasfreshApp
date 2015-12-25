@@ -9,9 +9,12 @@ angular.module('myApp.welcome', ['ngRoute'])
     });
 }])
  
-.controller('WelcomeCtrl', ['$scope', 
-                            'CommonProp',
-                            function($scope, CommonProp) {
-    $scope.username = CommonProp.getUser();
- 
-}]);
+.controller('WelcomeCtrl', ['$scope', 'CommonProp',
+    function($scope, CommonProp) {
+        $scope.username = CommonProp.getUser();
+        
+        $scope.logout = function(){
+            CommonProp.logoutUser();
+        }
+    }
+]);

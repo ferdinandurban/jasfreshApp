@@ -11,42 +11,61 @@ angular.module('myApp.home', ['ngRoute', 'firebase'])
 }])
  
 // Home controller
-.controller('HomeCtrl', [function($scope, $location, CommonProp, $firebaseAuth) {
-    var firebaseObj = new Firebase("https://jasfresh.firebaseio.com");
-    var loginObj = $firebaseAuth(firebaseObj);
-    
-    $scope.user = {};
-    $scope.SignIn = function(e) {
-        e.preventDefault();
-        var username = $scope.user.email;
-        var password = $scope.user.password;
-     
-        loginObj.$authWithPassword({
-                email: username,
-                password: password
-            })
-            .then(function(user) {
-                //Success callback
-                console.log('Authentication successful');
-                CommonProp.setUser(user.password.email);
-                $location.path('/welcome');
+.controller('HomeCtrl',['$scope', '$location', 'CommonProp', '$firebaseAuth',
+    function($scope, $location, CommonProp, $firebaseAuth) {
+        var ref = new Firebase("https://jasfresh.firebaseio.com");
+        var isLogged = false;
 
-            }, function(error) {
-                //Failure callback
-                console.log('Authentication failure');
+        ref.onAuth(function(authData) {
+            if (authData) {
+                console.log("Authenticated with uid:", authData.uid);
+                CommonProp.setUser(authData.password.email);
+                isLogged = true;        
+            } else {
+                console.log("Client unauthenticated.")
+                isLogged = false;
+            }
+        });
+
+        if (isLogged) $location("/welcome");
+
+        $scope.user = {};
+        $scope.SignIn = function(e) {
+            e.preventDefault();
+
+            ref.authWithPassword({
+              "email": $scope.user.email,
+              "password": $scope.user.password
+            }, function(error, authData) {
+                if (error) {
+                    console.log("Login Failed!", error);
+                } else {
+                    console.log("Authenticated successfully with payload:", authData);
+                    CommonProp.setUser(authData.password.email);
+                    $location.path('/welcome');
+                }
             });
-    }
-}])
-
-.service('CommonProp', function() {
-    var user = '';
- 
-    return {
-        getUser: function() {
-            return user;
-        },
-        setUser: function(value) {
-            user = value;
         }
+    }
+])
+
+.service('CommonProp',['$location','$firebaseAuth',function($location,$firebaseAuth) {
+        var user = '';
+        var ref = new Firebase ("https://jasfresh.firebaseio.com");
+        var auth = $firebaseAuth(ref);
+        
+        return {
+            getUser: function() {
+                return user;
+            },
+            setUser: function(value) {
+                user = value;
+            },
+            logoutUser: function(){
+                ref.unauth();
+                user='';
+                localStorage.removeItem('userEmail');
+                $location.path('/home');
+            }
     };
-});
+}]);
